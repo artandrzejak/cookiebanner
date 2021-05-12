@@ -1,0 +1,97 @@
+.box {
+    background-color: #edeff5 !important;
+    color: #838391 !important
+}
+
+.box .spopupbtnok {
+    color: #fff !important;
+    background-color: #1e90ff !important
+}
+
+.box.wire .spopupbtnok {
+    border: 1px solid !important;
+    border-color: #1e90ff !important;
+    background-color: transparent !important;
+    color: #1e90ff !important
+}
+
+.window {
+    position: fixed !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box;
+    font-family: Helvetica, Calibri, Arial, sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.5em !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+    z-index: 9999 !important;
+    opacity: 1 !important;
+    -webkit-transition: opacity 1s ease !important;
+    transition: opacity 1s ease !important
+}
+
+.floating {
+    padding: 2em !important;
+    width: 24em !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    align-items: flex-start !important
+}
+
+.window.banner {
+    padding: 1em 1.8em !important;
+    width: 100% !important;
+    border-radius: 5px !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important
+}
+
+.policylink {
+    opacity: .8 !important;
+    display: inline-block !important;
+    padding: .2em !important;
+    text-decoration: underline !important
+}
+
+.policylink:hover {
+    opacity: 1 !important;
+    text-decoration: none !important;
+    transition: 1.5s !important
+}
+
+.spopupbtnok {
+    opacity: .9 !important;
+    display: block !important;
+    padding: .4em .8em !important;
+    font-size: .9em !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+    border-width: 2px !important;
+    text-align: center !important;
+    white-space: nowrap !important
+}
+
+@media screen and (max-width: 550px) {
+    .window.floating.left {
+        display: flex;
+        right: 0 !important;
+        left: 0 !important;
+        bottom: 0;
+        width: 100% !important
+    }
+}
+
+.window.floating.left {
+    bottom: 0 !important;
+    left: 3em;
+    border-top-left-radius: .5em !important;
+    border-top-right-radius: .5em !important
+}
+
